@@ -1,0 +1,51 @@
+body {
+  background: linear-gradient(to bottom, #001f4d, #003366);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 8px solid white;
+  border-radius: 50%;
+  position: relative;
+  background: transparent;
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+}
+
+/* Hour hand - thick and short */
+.hour-hand {
+  width: 70px;
+  height: 6px;
+  background-color: black;
+  margin-left: -70px;
+}
+
+/* Minute hand - thinner and longer, stops before edge */
+.min-hand {
+  width: 100px;
+  height: 4px;
+  background-color: black;
+  margin-left: -100px;
+}
+
+/* Second hand - red and thin */
+.second-hand {
+  width: 110px;
+  height: 2px;
+  background-color: red;
+  margin-left: -110px;
+}

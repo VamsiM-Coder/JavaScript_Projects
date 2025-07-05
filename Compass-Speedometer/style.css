@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background: radial-gradient(#222 20%, #000);
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.compass-container {
+  text-align: center;
+}
+
+.compass {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.direction {
+  position: absolute;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+.north { top: 10px; left: 50%; transform: translateX(-50%); }
+.south { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.east  { right: 10px; top: 50%; transform: translateY(-50%); }
+.west  { left: 10px; top: 50%; transform: translateY(-50%); }
+
+.needle {
+  width: 4px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+  border-radius: 2px;
+}
+
+.speed {
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}

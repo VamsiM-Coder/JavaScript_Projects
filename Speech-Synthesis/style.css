@@ -1,0 +1,57 @@
+body {
+  background: #00aabb;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffc600;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: 'Courier New', cursive;
+}
+
+select, textarea, input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  width: 45%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: cursive;
+  background: black;
+  color: #ffc600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}

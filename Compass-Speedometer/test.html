@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body style="color:white; background:black;">
+  <h1>Compass Test</h1>
+  <p id="angle">Waiting...</p>
+
+  <script>
+    if (window.DeviceOrientationEvent) {
+      window.addEventListener("deviceorientation", function (event) {
+        document.getElementById("angle").innerText =
+          "Alpha (compass): " + event.alpha;
+      });
+    } else {
+      document.getElementById("angle").innerText = "Not Supported";
+    }
+  </script>
+</body>
+</html>
